@@ -513,6 +513,6 @@ public function getSomeDateAttribute($date)
 
 - Không bao giờ đẩy logic vào file routes
 - Giảm thiểu việc sử dụng Vanilla PHP trong Blade templates.
-(Thay vì viết {{ csrf_token() }} hoặc @csrf bạn lại đi viết <?php echo csrf_field(); ?>)
+(Thay vì viết {{ csrf_token() }} hoặc @csrf bạn lại đi viết `<?php echo csrf_field(); ?>`)
 
 Source: [laravel-best-practice](https://github.com/alexeymezenin/laravel-best-practices)
