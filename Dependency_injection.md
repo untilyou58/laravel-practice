@@ -398,3 +398,5 @@ If you have defined the join settings yourself, you need to properly define the 
 ```
 
 `MarvelousRandTool` Notice that the instance of is also dependent resolved using the service container. You can reduce the dependence on each other here as well by setting the join settings elsewhere.
+
+[source](https://qiita.com/harunbu/items/079ea728d2c9cf4f44d5)
