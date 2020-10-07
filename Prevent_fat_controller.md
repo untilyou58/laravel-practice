@@ -423,3 +423,5 @@ public function scopeImportant(Builder $builder) {
     return $builder->notCompleted()->expired();
 }
 ```
+
+[source](https://qiita.com/nunulk/items/e9f4c221e60de6d016a5)
