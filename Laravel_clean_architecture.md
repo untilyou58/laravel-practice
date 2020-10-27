@@ -4,7 +4,7 @@
 
 [Clean architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 
-![image architecture](images/architec.png)
+![image architecture](images/architect.png)
 
 Speaking of clean architecture, the first thing that comes to mind is this iconic diagram.
 If you take a quick look at this figure, it looks like a very abstract figure, so it is undeniable that you feel "what kind of code should you actually use?"
