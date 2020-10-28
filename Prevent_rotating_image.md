@@ -25,8 +25,11 @@ We will share how to easily optimize these at the same time.
 Follow the procedure below.
 
 ① Look at the current EXIF information
+
 ② Install Intervention Image (using Composer)
+
 ③ Enable Intervention Image (Set Config)
+
 ④ Actual image processing with Controller
 
 ## Actually try
