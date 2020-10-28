@@ -100,17 +100,19 @@ use Illuminate\Support\Facades\Storage; // Use storage facade
 ### Perform image processing
 
 InterventionImage can do a lot of things, but
-here's
-an example of resizing while maintaining the aspect ratio that you'll often use and converting files to jpg format
+here's an example of resizing while maintaining the aspect ratio that you'll often use and converting files to jpg format
 
 ```php
 $resized_image = Image::make($posted_image)->fit(640, 360)->encode('jpg');
 ```
 
-`$posted_image` is the unprocessed image, and `make()` loads the unprocessed image into InterventionImage.
-fit () is a method that specifies the width and height and trims if the aspect ratio does not match.
+`$posted_image` is the unprocessed image, and image before 
 
-For simple resizing, resize() is fine, but I think this fit() is convenient because the image will be distorted.
+`make()` loads the unprocessed image into InterventionImage.
+
+`fit()` is a method that specifies the width and height and trims if the aspect ratio does not match.
+
+For simple resizing, `resize()` is fine, but I think this `fit()` is convenient because the image will be distorted.
 
 * For comprehensive image processing with Intervention Image, refer to this site.
 
