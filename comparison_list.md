@@ -40,8 +40,8 @@ This mem by @Fell [PHP: isset、is_null、if($var)、empty 比較一覧表](http
 
 ### Getter
 
-| |value    | type      |  | isset | is_null | empty | if($var) |  | !empty|
-| |---------|-----------|--|-------|--------|-------|-----------|--|-------|
+|  |value    | type      |  | isset | is_null | empty | if($var) |  | !empty|
+|--|---------|-----------|--|-------|--------|-------|-----------|--|-------|
 |1|	$var	|未定義(null)|  | false | true   |true	| false	| | false |
 |2|	$var = NULL       | null  |	|false|	true |  true| false| |false|
 |3|	$var = "";        |string | |false| false|	true| false| |false|
