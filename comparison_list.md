@@ -36,23 +36,23 @@ This mem by @Fell [PHP: isset、is_null、if($var)、empty 比較一覧表](http
 - `!empty` is a check when there is `a value` with `undefined check`.
 - The judgment part in `(*)` is quite delicate, and it is judged that there is no numerical 0 or "0" in the character string.
 
-## variable in class
+## Variable in class
 
-### getter
+### Getter
 
-| |value    | type      || isset | is_null | empty | if($var) | | !empty|
-| |---------|-----------|-|-------|--------|-------|----------| |-------|
-|1|	$var	   |未定義(null)||	false | true	|true	|false	   | | false |
-|2|	$var = NULL| null|	|false|	true|true|	false|	|false|
-|3|	$var = ""; |string | |false|false|	true|	false|	|false|
-|4(*)|	$var = 0;  |int	|	|false|	false|	true|	false|	|false|
-|5(*)|	$var = "0";|int	|	|false|	false|	true|	false|	|false|
-|6|	$var = 1;  |int	|	|false|	false|	true|	true|	|false|
-|7|	$var = "1";|int	|	|false|	false|	true|	true|	|false|
-|8|	$var = array()|	array|	|false|	false|	true|	false|	|false|
-|9(*)|	$var = array(1)| array|	 |false| false|	true|	true|	|false|
+| |value    | type      |  | isset | is_null | empty | if($var) |  | !empty|
+| |---------|-----------|--|-------|--------|-------|-----------|--|-------|
+|1|	$var	|未定義(null)|  | false | true   |true	| false	| | false |
+|2|	$var = NULL       | null  |	|false|	true |  true| false| |false|
+|3|	$var = "";        |string | |false| false|	true| false| |false|
+|4(*)|	$var = 0;     |int	  |	|false|	false|	true| false| |false|
+|5(*)|	$var = "0";   |int	  |	|false|	false|	true| false| |false|
+|6|	$var = 1;         |int	  |	|false|	false|	true|  true| |false|
+|7|	$var = "1";       |int	  |	|false|	false|	true|  true| |false|
+|8|	$var = array()    |	array |	|false|	false|	true| false| |false|
+|9(*)| $var = array(1)| array |	|false| false|	true|  true| |false|
 
-### comment2
+### Comment 2
 
 - With getters, it's different `!is_null` and `if($var)` are likely to be same.
 - `isset` doesn't work at all. Use `!is_null`.
